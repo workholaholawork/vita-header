@@ -118,10 +118,6 @@
     text-decoration: none;
   }
 
-  .mobile-top-contacts__region {
-    font-weight: 600;
-  }
-
   .mobile-top-contacts__region--active {
     text-decoration: underline;
     text-underline-offset: 2px;
