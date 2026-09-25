@@ -1,5 +1,7 @@
 # ТЗ: доработка шапки сайта «Вита»
 
+**Общее ТЗ:** [Google Документ](https://docs.google.com/document/d/1hF4imG7f2YH_-udq0kfdy7w9PDXCdrP3C63Frw5iAfA/edit?tab=t.0#heading=h.k2lfvo64b0tc)
+
 > [!IMPORTANT]
 > Файлы `index.html`, `vita-header-exact.css`, `vita-header-exact.js` и каталог `assets` в корне — только визуал для просмотра и сверки через GitHub Pages. Разработчикам не нужно переносить этот код на сайт или использовать его как основу внедрения.
 >
