@@ -1,0 +1,83 @@
+<!-- 1. DESKTOP: вставить первым элементом в .header-contacts-block > .row.
+     Старую колонку контактов Краснодара удалить, телефон Сочи оставить и
+     добавить ему класс header-contact-primary. -->
+<div class="header-main-regions">
+  <nav class="header-region-switcher header-region-switcher--main" aria-label="Выбор региона">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+         stroke-linejoin="round" class="header-region-switcher__icon" aria-hidden="true">
+      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+    <a class="header-region-switcher__link header-region-switcher__link--active"
+       href="https://domprestarelykh.com/" aria-current="page">Краснодар</a>
+    <a class="header-region-switcher__link"
+       href="https://sochi.domprestarelykh.com/">Сочи</a>
+  </nav>
+</div>
+
+<!-- 2. MOBILE: вставить непосредственно перед #mobileheader. -->
+<div id="mobile-top-contacts" class="mobile-top-contacts">
+  <div class="mobile-top-contacts__inner">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+         stroke-linejoin="round" class="mobile-top-contacts__pin" aria-hidden="true">
+      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+    <a class="mobile-top-contacts__region mobile-top-contacts__region--active"
+       href="https://domprestarelykh.com/" aria-current="page">Краснодар</a>
+    <a class="mobile-top-contacts__region"
+       href="https://sochi.domprestarelykh.com/">Сочи</a>
+    <a class="mobile-top-contacts__phone" href="tel:79882444486">+7 (988) 244 44 86</a>
+  </div>
+</div>
+
+<!-- 3. MOBILE: внутри .mobile_header_top сохранить штатные burger и logo-block,
+     удалить .right-icons с поиском и после logo-block вставить кнопку. -->
+<span class="mobile-header-record animate-load"
+      data-event="jqm" data-param-id="19" data-name="record_online"
+      role="button" tabindex="0">Запись</span>
+
+<!-- 4. BURGER SEARCH: разместить первым элементом внутри #mobilemenu .wrap,
+     перед .menu.top. В production вместо копирования HTML повторно вывести тот же
+     компонент bitrix:search.title, который используется на desktop, но передать
+     INPUT_ID=title-search-input_mobile и CONTAINER_ID=title-search_mobile. -->
+<div class="mobile-menu-search" id="title-search_mobile">
+  <form action="/search/" class="mobile-menu-search__form" role="search">
+    <label class="mobile-menu-search__label" for="title-search-input_mobile">Поиск по сайту</label>
+    <input class="mobile-menu-search__input" id="title-search-input_mobile" type="text"
+           name="q" value="" placeholder="Поиск по сайту" maxlength="50" autocomplete="off">
+    <button class="mobile-menu-search__button" type="submit" name="s"
+            value="Поиск по сайту" aria-label="Найти">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-4-4"></path>
+      </svg>
+    </button>
+  </form>
+</div>
+
+<!-- 5. BURGER CONTACTS: заменить старый .mobile-contacts-menu этим блоком.
+     Кнопки «Запись онлайн» / «Схема проезда» над ним и email под ним сохранить. -->
+<div class="mobile-contacts-menu-v2">
+  <div class="mobile-contacts-menu-v2__phone">
+    <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z" fill="currentColor"></path>
+    </svg>
+    <div>
+      <a href="tel:78612444486">+7 (861) 244 44 86</a>
+      <span>Пн-Вс: 09:00 - 19:00</span>
+    </div>
+  </div>
+  <nav class="mobile-contacts-menu-v2__regions" aria-label="Выбор региона">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+    <a class="active" href="https://domprestarelykh.com/" aria-current="page">Краснодар</a>
+    <a href="https://sochi.domprestarelykh.com/">Сочи</a>
+  </nav>
+</div>
