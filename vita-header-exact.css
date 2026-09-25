@@ -118,6 +118,10 @@
     text-decoration: none;
   }
 
+  .mobile-top-contacts__region {
+    font-weight: 600;
+  }
+
   .mobile-top-contacts__region--active {
     text-decoration: underline;
     text-underline-offset: 2px;
@@ -338,6 +342,7 @@
 
   #mobilemenu .mobile-contacts-menu-v2__regions a {
     color: #333;
+    font-weight: 600;
     line-height: 20px;
     text-decoration: none;
   }
@@ -417,6 +422,7 @@
   .header-region-switcher__link {
     color: #333;
     font-size: 17px;
+    font-weight: 600;
     line-height: 1;
     text-decoration: none;
   }
